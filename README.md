@@ -1,6 +1,6 @@
 # BrainSqueeze
 
-Quiz made for booth and promotional use by VTŠ Apps Team.
+A quiz made for booth and promotional use by VTŠ Apps Team.
 
 ## Prerequisites:
 
