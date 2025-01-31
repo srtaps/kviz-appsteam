@@ -1,0 +1,33 @@
+{
+  "name": "primer-strukture",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run start:mongo\" \"npm run dev:scss\" \"npm run dev:server\"",
+    "dev:server": "node --watch --env-file=.env app.js",
+    "dev:scss": "sass --watch ./public/scss/index.scss ./public/css/index.css",
+    "prod": "npm run build && concurrently \"npm run start:mongo\" \"npm run prod:server\"",
+    "prod:server": "node --env-file=.env app.js production",
+    "build": "npm run minify:html && npm run minify:css && npm run minify:js",
+    "minify:html": "npx html-minifier-terser --collapse-whitespace --remove-comments ./public/index.html --output ./dist/index.html ",
+    "minify:css": "sass --style=compressed --no-source-map ./public/scss/index.scss ./dist/css/index.css",
+    "minify:js": "node scripts/uglify.js",
+    "start:mongo": "cd scripts && start-mongo-windows.bat",
+    "setup:windows": "cd scripts && setup-windows.bat"
+  },
+  "author": "Jovan Bukatarević SRT 03/22, Dušan Mihajlović SRT 02/22",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "html-minifier-terser": "^7.2.0",
+    "sass": "^1.81.0",
+    "terser": "^5.37.0"
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - BrainSqueeZe</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/index.css">
+    <script defer src="/js/settings.js"></script>
+</head>
+<body>
+    <div class="settings">
+        <img src="/img/logo-2-settings.png" alt="" class="settings__logo">
+        <div class="settings__grid">
+            <div class="settings__column settings__column--pitanja">
+                <h3 class="settings__column__title">Pitanja</h3>
+                <div class="input-row">
+                    <img src="/img/input-row.png" alt="" class="input-row__image">
+                    <div class="input-row__container">
+                        <label class="input-row__label" for="broj-pitanja">Ukupan broj pitanja:</label>
+                        <input class="input--number" type="number" id="broj-pitanja" name="broj-pitanja" value="0">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <img src="/img/input-row.png" alt="" class="input-row__image">
+                    <div class="input-row__container">
+                        <label class="input-row__label" for="vreme-sekunde">Vreme za odgovor u sekundama:</label>
+                        <input class="input--number" type="number" id="vreme-sekunde" name="vreme-sekunde"
+                            value="0">
+                    </div>
+                </div>
+                <a href="">
+                    <div class="button">
+                        <img src="/img/main-menu-not-selected.png" alt="" class="button__image">
+                        <h2 class="button__text">SINHRONIZUJ BAZU</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="settings__column settings__column--kategorije">
+                <h3 class="settings__column__title">Kategorije</h3>
+                <!--Categories are loaded dynamically here-->
+                <div id="categories-container"></div>
+            </div>
+            <div class="settings__column settings__column--poeni">
+                <h3 class="settings__column__title">Poeni</h3>
+                <div class="input-row">
+                    <img src="/img/input-row.png" alt="" class="input-row__image">
+                    <div class="input-row__container">
+                        <label class="input-row__label" for="poeni-prvi">Broj poena za prvi tačan odgovor:</label>
+                        <input class="input--number" type="number" id="poeni-prvi" name="poeni-prvi"
+                        value="0">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <img src="/img/input-row.png" alt="" class="input-row__image">
+                    <div class="input-row__container">
+                        <label class="input-row__label" for="poeni-drugi">Broj poena za drugi tačan odgovor:</label>
+                        <input class="input--number" type="number" id="poeni-drugi" name="poeni-drugi"
+                        value="0">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <img src="/img/input-row.png" alt="" class="input-row__image">
+                    <div class="input-row__container">
+                        <label class="input-row__label" for="poeni-treci">Broj poena za treći tačan odgovor:</label>
+                        <input class="input--number" type="number" id="poeni-treci" name="poeni-treci"
+                        value="0">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <img src="/img/input-row.png" alt="" class="input-row__image">
+                    <div class="input-row__container">
+                        <label class="input-row__label" for="poeni-cetvrti">Broj poena za četvrti tačan odgovor:</label>
+                        <input class="input--number" type="number" id="poeni-cetvrti" name="poeni-cetvrti"
+                        value="0">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <img src="/img/input-row.png" alt="" class="input-row__image">
+                    <div class="input-row__container">
+                        <label class="input-row__label" for="poeni-netacan">Broj poena za netačan odgovor:</label>
+                        <input class="input--number" type="number" id="poeni-netacan" name="poeni-netacan"
+                        value="0">
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="button" id="save-settings">
+                        <img src="/img/main-menu-not-selected.png" alt="" class="button__image">
+                        <h2 class="button__text">SAČUVAJ</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a id="return-button" class="button-back" href="/">
+            <img src="/img/previous.png" alt="">
+        </a>
+    </div>
+</body>
+</html>

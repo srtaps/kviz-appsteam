@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - BrainSqueeZe</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <script defer src="/js/quizLogic.js"></script>
+  </head>
+
+  <body>
+    <div class="quiz display-none" id="game-area">
+      <div class="quiz__questions">
+        <div class="quiz__logo">
+          <img class="quiz__logo__image" src="/img/main-logo.png" alt="" />
+        </div>
+        <div class="game-round">
+          <div class="game-round__container">
+            <img
+              class="game-round__image"
+              src="/img/questions-numbers.png"
+              alt=""
+            />
+            <p class="game-round__text" id="current-round"></p>
+          </div>
+        </div>
+        <div class="question">
+          <img class="question__image" src="/img/question-row.png" alt="" />
+          <p class="question__text" id="question-text"></p>
+        </div>
+        <div class="answers">
+          <div class="answer">
+            <img
+              src="/img/answer-row-not-active.png"
+              alt=""
+              class="answer__image"
+            />
+            <div class="answer__container">
+              <div class="answer__color">
+                <img
+                  class="answer__color__image"
+                  src="/img/answer-b.png"
+                  alt=""
+                />
+                <p class="answer__color__text">A</p>
+              </div>
+              <p class="answer__text"></p>
+            </div>
+          </div>
+          <div class="answer">
+            <img
+              src="/img/answer-row-not-active.png"
+              alt=""
+              class="answer__image"
+            />
+            <div class="answer__container answer__container--right">
+              <div class="answer__color">
+                <img
+                  class="answer__color__image"
+                  src="/img/answer-a.png"
+                  alt=""
+                />
+                <p class="answer__color__text">B</p>
+              </div>
+              <p class="answer__text"></p>
+            </div>
+          </div>
+          <div class="answer">
+            <img
+              src="/img/answer-row-not-active.png"
+              alt=""
+              class="answer__image"
+            />
+            <div class="answer__container">
+              <div class="answer__color">
+                <img
+                  class="answer__color__image"
+                  src="/img/answer-c.png"
+                  alt=""
+                />
+                <p class="answer__color__text">C</p>
+              </div>
+              <p class="answer__text"></p>
+            </div>
+          </div>
+          <div class="answer">
+            <img
+              src="/img/answer-row-not-active.png"
+              alt=""
+              class="answer__image"
+            />
+            <div class="answer__container answer__container--right">
+              <div class="answer__color">
+                <img
+                  class="answer__color__image"
+                  src="/img/answer-d-v2.png"
+                  alt=""
+                />
+                <p class="answer__color__text">D</p>
+              </div>
+              <p class="answer__text"></p>
+            </div>
+          </div>
+          <div class="timer">
+            <p id="timer-text">0</p>
+            <img src="/img/timer.png" alt="" class="timer__image" />
+            <img
+              src="/img/timer-alert.png"
+              alt=""
+              class="opacity-0"
+              id="timer-alert"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="quiz__scores">
+        <p class="title">Rezultat</p>
+        <div class="container" id="team-scores">
+          <!--Team names and scores load dynamically here-->
+        </div>
+      </div>
+    </div>
+
+    <div class="team-input" id="enter-teams">
+      <div class="logo-container">
+        <img class="team-input__logo" src="/img/main-logo.png" alt="" />
+      </div>
+      <div class="input-row">
+        <img class="input-row__image" src="/img/input-row.png" alt="" />
+        <input
+          autofocus
+          class="input--text"
+          type="text"
+          id="tim1"
+          placeholder="Tim 1"
+        />
+      </div>
+      <div class="input-row">
+        <img class="input-row__image" src="/img/input-row.png" alt="" />
+        <input class="input--text" type="text" id="tim2" placeholder="Tim 2" />
+      </div>
+      <div class="input-row">
+        <img class="input-row__image" src="/img/input-row.png" alt="" />
+        <input class="input--text" type="text" id="tim3" placeholder="Tim 3" />
+      </div>
+      <div class="input-row">
+        <img class="input-row__image" src="/img/input-row.png" alt="" />
+        <input class="input--text" type="text" id="tim4" placeholder="Tim 4" />
+      </div>
+      <div class="button" id="start-button">
+        <img
+          class="button__image"
+          src="/img/main-menu-not-selected.png"
+          alt=""
+        />
+        <h2 class="button__text">START</h2>
+      </div>
+      <a class="button-back" href="/">
+        <img src="/img/previous.png" alt="" />
+      </a>
+    </div>
+
+    <div class="quiz-end display-none" id="end-score">
+      <div class="container" id="end-teams"></div>
+
+      <a class="button-back" href="/">
+        <img src="/img/previous.png" alt="" />
+      </a>
+    </div>
+  </body>
+</html>

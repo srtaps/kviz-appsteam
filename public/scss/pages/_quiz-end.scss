@@ -1,0 +1,59 @@
+.quiz-end {
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 64px;
+    }
+
+    .team-result:first-of-type {
+        margin-bottom: 20px;
+        text-align: center;
+
+        .team-result__image {
+            margin-right: calc($image-size-firstPlace - $image-size-teamResult);
+            height: $image-size-firstPlace;
+            width: auto;
+        }
+
+        .team-result__name,
+        .team-result__score {
+            font-weight: 600;
+            font-size: calc($font-size-teamName + 4px);
+        }
+    }
+
+    .team-result {
+        width: 44%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .wrapper {
+            width: $image-size-firstPlace;
+            text-align: center;
+        }
+
+        &__image {
+            height: $image-size-teamResult;
+            width: $image-size-teamResult;
+            filter: drop-shadow(0px 0px 8px black);
+        }
+
+        &__name {
+            text-align: center;
+            font-size: $font-size-teamName;
+        }
+
+        &__score {
+            font-size: $font-size-teamScore;
+            text-align: right;
+        }
+    }
+}

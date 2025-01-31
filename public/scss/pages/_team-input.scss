@@ -1,0 +1,37 @@
+.team-input {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        height: 160px;
+    }
+
+    .logo-container {
+        margin-top: 5%;
+        margin-bottom: 48px;
+    }
+
+    .button, .input-row {
+        width: 600px;
+    }
+
+    .button {
+        margin-top: 48px;
+
+        &__text {
+            font-size: 44px;
+        }
+    }
+
+    .input-row {
+        margin-bottom: 4px;
+
+        .input--text {
+            width: 80%;
+            font-size: 38px;
+        }
+    }
+}

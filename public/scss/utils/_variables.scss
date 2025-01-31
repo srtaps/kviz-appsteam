@@ -1,0 +1,51 @@
+// Main font color
+$color-text-white: #FBFAF5;
+
+// _menu.scss
+$font-size-menuButton: 48px;
+
+$image-width-menuLogo: 720px;
+$image-width-menuButton: 600px;
+
+// _settings.scss
+$font-size-settingsButton: 28px;
+$font-size-settingsLabel: 24px;
+$font-size-inputNumber: 28px;
+$font-size-categoryLabel: 22px;
+
+// _questions.scss
+// .quiz__questions
+$font-size-gameRound: 32px;
+$font-size-question: 36px;
+$font-size-answer: 32px;
+$font-size-answerColor: 40px;
+$font-size-choice: 32px;
+$font-size-timer: 36px;
+
+$image-height-gameRound: 48px;
+$image-height-question: 232px;
+$image-height-answer: 140px;
+$image-height-answerColor: 112px;
+$image-width-answerColor: calc($image-height-answerColor + 12px);
+
+$answers-row-gap: 40px;
+$answers-column-gap: 80px;
+
+// .quiz__scores
+$font-size-scoresTitle: 32px;
+$font-size-teamName1: 32px;
+$font-size-teamPosition: 32px;
+$font-size-teamScore: 32px;
+
+$image-height-teamPosition: 84px;
+$image-height-teamScore: 104px;
+
+// Prevents the result container from stretching
+$team-name-length: 11ch;
+
+// _quiz-end.scss
+$font-size-teamName: 40px;
+$font-size-teamScore: 40px;
+
+$image-size-teamResult: 136px;
+$image-size-firstPlace: 172px;

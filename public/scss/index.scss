@@ -1,0 +1,16 @@
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/utilities";
+
+@import "base/base";
+
+@import "components/button-back";
+@import "components/button";
+@import "components/input";
+
+@import "pages/menu";
+@import "pages/team-input";
+@import "pages/questions";
+@import "pages/quiz-end";
+@import "pages/leaderboard";
+@import "pages/settings";

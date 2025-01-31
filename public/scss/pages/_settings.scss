@@ -1,0 +1,71 @@
+.settings {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+
+    &__logo {
+        height: 100px;
+        margin-top: 5%;
+        margin-bottom: 44px;
+    }
+
+    &__grid {
+        margin-left: 36px;
+        margin-right: 36px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 96px;
+    }
+
+    &__column__title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .input-row {
+        &__image {
+            height: 96px;
+        }
+
+        &__container {
+            width: 84%;
+        }
+
+        &__label {
+            font-size: $font-size-settingsLabel;
+        }
+
+        .input--number {
+            font-size: $font-size-inputNumber;
+        }
+    }
+
+    #categories-container {
+        margin: 0 auto;
+        width: 88%;
+        
+        .input-row {
+            margin-bottom: 2px;
+        }
+
+        .input-row__image {
+            height: 64px;
+        }
+
+        .input-row__container {
+            width: 72%;
+            font-size: $font-size-categoryLabel;
+        }
+    }
+
+    .button {
+        margin-top: 44px;
+
+        &__text {
+            font-size: $font-size-settingsButton;
+        }
+    }
+}

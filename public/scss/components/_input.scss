@@ -1,0 +1,52 @@
+.input-row {
+    position: relative;
+    color: black;
+    text-shadow: none;
+
+    &, &__image {
+        width: 100%;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include center-absolute;
+    }
+
+    &__label {
+        padding-right: 8px;
+    }
+
+    .input--number {
+        font: inherit;
+        width: 4ch;
+        border: none;
+        background: none;
+        letter-spacing: inherit;
+        word-spacing: inherit;
+        padding: 0 4px;
+    }
+
+    .input--number:focus {
+        outline: 3px solid #00f;
+        box-shadow: 0 0 0.2em #00f;
+    }
+
+    .input--checkbox {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        transition: all .1s ease-out;
+    }
+
+    .input--text {
+        font: inherit;
+        letter-spacing: inherit;
+        word-spacing: inherit;
+        background: none;
+        outline: none;
+        border: none;
+        @include center-absolute;
+    }
+}
