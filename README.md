@@ -1,7 +1,5 @@
 # BrainSqueeze
 
-A quiz made for booth and promotional use by VTŠ Apps Team.
-
 ## Prerequisites:
 
 - NodeJS (used v20.18.1)
